@@ -3,7 +3,7 @@ applications:
   buildpacks: 
   - python_buildpack
   random-route: true
-  memmory: 128M
+  memory: 128M
   command: python server.py
   services:
   env:
