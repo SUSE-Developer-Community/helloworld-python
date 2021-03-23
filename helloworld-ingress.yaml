@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: helloworld-ingress
+spec:
+  rules:
+  - host helloworld.192.168.33.11.xip.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          serviceName: helloworld-nodeport
+          servicePort: 8080

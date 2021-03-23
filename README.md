@@ -1,2 +1,6 @@
 # helloworld-python
-A Cloud Foundry hello world sample app written in plain Python - no frameworks used
+A former Cloud Foundry hello world sample app turned into something that deploys to Kubernetes. 
+
+Deploy with 
+
+	kubectl apply -f *.yaml
